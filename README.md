@@ -13,7 +13,6 @@ My inspiration for taking on this project comes from me wanting to work on more 
 ## Dataset Feature Explaination
 [Feature Explaination](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/Garment_Project_Feature_Description.txt)
 
-
 ## Exploring the Data 
  ![alt text](https://github.com/faithfulalabi/African_Crisis/blob/main/EDA_GIF.gif?raw=true)
  
@@ -21,8 +20,15 @@ My inspiration for taking on this project comes from me wanting to work on more 
 Observation of this plot, we can see that most of the enteries of the data are in the Sewing department
 ![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/eda_assets/Entry_per_Department.png?raw=true)
 
-
-
 ### Number of Entries per Quarter 
-The plot below shows can see that most of the enteries of the data are in the Sewing department
-![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/eda_assets/Entry_per_Department.png?raw=true)
+The plot below shows the amount of enteries per quarter
+![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/eda_assets/Entry_per_Quarter.png?raw=true)
+
+### Distribution of Targeted Productivity
+This plot shows the distributed targeted productivity across the dataset.
+![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/eda_assets/Targeted_Productivity_Distribution.png?raw=true)
+
+### Distribution of Actual Productivity
+This plot shows the distributed actual productivity across the dataset.
+![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/eda_assets/Actual_Productivity_Distribution.png?raw=true)
+
