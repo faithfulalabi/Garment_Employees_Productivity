@@ -6,7 +6,7 @@
 * Engineered features to correct skewness, deal with categorical and missing data.
 * Used a XGBoost Regressor model, performed some paramter adjustments and optimized it using GridsearchCV for the best model.
 
-* __Motivation__: 
+## __Motivation__: 
 
 My inspiration for taking on this project comes from me wanting to work on more business related projects and answer questions from a management and director prospective.
 
@@ -19,4 +19,10 @@ My inspiration for taking on this project comes from me wanting to work on more 
  
 ### Number of Entries per Department
 Observation of this plot, we can see that most of the enteries of the data are in the Sewing department
+![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/eda_assets/Entry_per_Department.png?raw=true)
+
+
+
+### Number of Entries per Quarter 
+The plot below shows can see that most of the enteries of the data are in the Sewing department
 ![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/eda_assets/Entry_per_Department.png?raw=true)
