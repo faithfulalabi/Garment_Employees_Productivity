@@ -1,14 +1,14 @@
 # Garment_Employees_Productivity: Project Overview
 
-* Created a tool that predicts the productivity performance (RMSE ~ 0.075) of the working teams at a garment manufacturing factory. The productivity performs ranges from (0-1).
+* Created a tool that predicts the productivity performance of the working teams at a garment manufacturing factory (RMSE ~ 0.075). The productivity performs ranges from (0-1).
 * Dataset is from the UCI Machine Learning Repository [here](https://archive.ics.uci.edu/ml/datasets/Productivity+Prediction+of+Garment+Employees)
-* Did some Exploratory Data Analysis (EDA) to answer certain questions I asked myself from the prospective of if I was mananging both departments, and to better understand the dataset.
+* Did some Exploratory Data Analysis (EDA) to answer certain questions I asked myself from the prospective of if I was mananging all the teams in both departments, and to better understand the dataset.
 * Engineered features to correct skewness, deal with categorical and missing data.
 * Used a XGBoost Regressor model, performed some paramter adjustments and optimized it using GridsearchCV for the best model.
 
 ## __Motivation__: 
 
-My inspiration for taking on this project comes from me wanting to work on more business related projects and answer questions from a management and director prospective.
+My inspiration for taking on this project comes from me wanting to work on more business related projects that answer questions from a management and director prospectivema and to also predict performance of employees based off certain features.
 
 ## Dataset Feature Explaination
 [Feature Explaination](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/Garment_Project_Feature_Description.txt)
@@ -17,11 +17,11 @@ My inspiration for taking on this project comes from me wanting to work on more 
  ![alt text](https://github.com/faithfulalabi/African_Crisis/blob/main/EDA_GIF.gif?raw=true)
  
 ### Number of Entries per Department
-Observation of this plot, we can see that most of the enteries of the data are in the Sewing department
+From the observation of this plot, we can see that most of the enteries of the data are in the Sewing department.
 ![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/eda_assets/Entry_per_Department.png?raw=true)
 
 ### Number of Entries per Quarter 
-The plot below shows the amount of enteries per quarter
+The plot below shows the amount of enteries per quarter.
 ![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/eda_assets/Entry_per_Quarter.png?raw=true)
 
 ### Distribution of Targeted Productivity
@@ -44,10 +44,6 @@ The question i asked myself to generate this plot was, which teams had the highe
 I wanted to know since there was a huge spike in the average trend of incentives paid out after February, what was the monthly average trend in the amount of work in progress. We can observe that the trends are inversely proportional to each other
 ![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/eda_assets/Average_Monthly_Work_In_Progress.png?raw=true)
 
-### Total Idle people per Team
-The plot below shows the total number of idle people per team. We can see that teams 7 & 8 has the highest total amount of idle people. 
-![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/eda_assets/Sum_of_Idle_Men_per_Team.png?raw=true)
-
 ### Average Overtime per Team
 What teams had the highest amount of average overtime? They were teams 4,3,and 5.    
 ![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/eda_assets/Average_Overtime_per_Team.png?raw=true)
@@ -57,6 +53,12 @@ From the plot we can observe that team 9 had the highest amount of incentives pa
 ![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/eda_assets/Total_Incentive_Payout_by_Team.png?raw=true)
 
 ### Average Monthly Overtime Trend
-The overall trend for the monthly over time trended down and mostly flat for the 3 month of data we have.     
+The overall trend for the monthly overtime trended down and mostly flat for the 3 month of data we have.     
 ![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/eda_assets/Average_Overtime_Trend.png?raw=true)
+
+### Total Idle people per Team
+The plot below shows the total number of idle people per team. We can see that teams 7 & 8 has the highest total amount of idle people. 
+![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/eda_assets/Sum_of_Idle_Men_per_Team.png?raw=true)
+
+
 
