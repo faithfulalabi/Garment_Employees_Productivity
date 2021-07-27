@@ -60,5 +60,13 @@ The overall trend for the monthly overtime trended down and mostly flat for the 
 The plot below shows the total number of idle people per team. We can see that teams 7 & 8 has the highest total amount of idle people. 
 ![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/eda_assets/Sum_of_Idle_Men_per_Team.png?raw=true)
 
+## Data Cleaning
+After getting the dataset, I cleaned it up, dealt with missing data so our data can be acceptable for our model. I made the following changes:
 
 
+
+
+
+
+
+## Model Building
