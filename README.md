@@ -62,11 +62,43 @@ The plot below shows the total number of idle people per team. We can see that t
 
 ## Data Cleaning
 After getting the dataset, I cleaned it up, dealt with missing data so our data can be acceptable for our model. I made the following changes:
-
-
-
-
+* Filled all missing Work In Progress(WIP) column data with 0 because all the missing data were in the finishing department, meaning they were waiting on work from the sewing department.
+* Converted the date column to datetime object.
+* Converted the overtime column from minutes to hours.
+* Combined the two seperate finishing departments into 1 finishing department.
+* Transformed the actual productivity column to be less negatively skewed.
 
 
 
 ## Model Building
+
+First I transformed the categorical strings into dummy variables. I then split the data into train and test sets with a test size of 20%.
+
+I scaled the data and tested a Lasso, Ridge, ElasticNet, XGBRegressor, ExtraTreesRegressor, and AdaBoostRegressor models(see training scores plot below) using R^2 as my scoring metric. Ultimately I chose the XGBRegressor model because it had the highest R^2 score(see training scores plot below). Meaning 41.3% of the variation in y can be explained by the changes in X.
+![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/models.png?raw=true)
+
+I tested my model on the training and test dataset without any adjustments to the hypeparameters and a scoring metric of R^2(see Actual vs Predicted plot below). I obtained:
+
+Training score: 0.979257990983347
+Testing score: 0.40931711159708206
+
+From the scores above and the plot below, we can observe that our model is overfitting and not adapting well to new data. 
+![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/Initial_Actual_vs_Predicted.png?raw=true)
+
+After tuning these parameters: learning_rate, max_depth, min_child_weight, subsample, colsample_bytree, n_estimators, objective, random_state. I was able to obtain a (see plot below): 
+
+Training score: 0.7188269109746894
+Testing score: 0.5417706699183125
+
+From the plot below we can see that our model is no longer overfitting
+![alt text](https://github.com/faithfulalabi/Garment_Employees_Productivity/blob/main/Initial_Actual_vs_Predicted.png?raw=true)
+
+I chose the RMSE, MAE, and R^2 because they're easy to interpret.
+
+
+## Model Performance
+
+* XGBRegressor : 
+  test_RMSE: 0.07511378123742236
+  test_MAE: 0.04898648752560755
+  R^2:0.5417706699183125
