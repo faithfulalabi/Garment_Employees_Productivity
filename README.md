@@ -99,6 +99,6 @@ I chose the RMSE, MAE, and R^2 because they're easy to interpret.
 ## Model Performance
 
 * XGBRegressor : 
-  *test_RMSE: 0.07511378123742236
-  *test_MAE: 0.04898648752560755
-  *R^2:0.5417706699183125
+  test_RMSE: 0.07511378123742236
+  test_MAE: 0.04898648752560755
+  R^2:0.5417706699183125
