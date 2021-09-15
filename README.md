@@ -4,7 +4,7 @@
 * Dataset is from the UCI Machine Learning Repository [here](https://archive.ics.uci.edu/ml/datasets/Productivity+Prediction+of+Garment+Employees)
 * Did some Exploratory Data Analysis (EDA) to answer certain questions I asked myself from the prospective of if I was mananging all the teams in both departments, and to better understand the dataset.
 * Engineered features to correct skewness, deal with categorical and missing data.
-* Used a XGBoost Regressor model, performed some paramter adjustments and optimized it using GridsearchCV for the best model.
+* Used a XGBoost Regressor model, performed some parameter adjustments and optimized it using GridsearchCV for the best parameters.
 
 ## __Motivation__: 
 
